@@ -6,3 +6,11 @@
     to garlic. He has many brides.</p>
 
   <button class="btn btn-primary" {{action 'showRealName'}}>Click Here to learn Dracula's real name!</button>
+
+  {{#if isPictureShowing}}
+    <p><img src="http://upload.wikimedia.org/wikipedia/en/2/29/Count_von_Count_kneeling.png"
+            alt="A photo of Dracula"></p>
+    <button class='btn btn-info' {{action 'hidePicture'}}>Put him back in his coffin!</button>
+  {{else}}
+    <button class="btn btn-info" {{action 'showPicture'}}>Click here to see the Count</button>
+  {{/if}}
