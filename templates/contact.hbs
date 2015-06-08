@@ -1,8 +1,16 @@
 <div class="container">
-  <h1>Contact</h1>
-  <p>Want to get in touch?</p>
-  <ul>
-    <li>Phone: 1-800-DRACULA</li>
-    <li>Email: <a href="count@dracula.com">count@dracula.com</a></li>
-  </ul>
+  <div class="row">
+    <div class="col-sm-6">
+      <h1>Contact</h1>
+      <p>Want to get in touch?</p>
+      <ul>
+        <li>{{#link-to 'phone'}}Phone{{/link-to}}</li>
+        <li>{{#link-to 'email'}}Email{{/link-to}}</li>
+      </ul>
+    </div>
+
+    <div class="col-sm-6">
+      {{outlet}}
+    </div>
+  </div>
 </div>
