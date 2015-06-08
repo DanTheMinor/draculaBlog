@@ -13,6 +13,10 @@
       <a href="#" {{action 'sendMessage'}}>click here to send 'secret' message!</a>
     </p>
 
+    {{#if messageSent}}
+      <p>Your Message has been sent. Your confirmation number is {{confirmationNumber}}</p>
+    {{/if}}
+
     <div class="col-sm-6">
       {{outlet}}
     </div>
