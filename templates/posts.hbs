@@ -1,6 +1,11 @@
-<div class="container">
+<!-- <div class="container"> -->
+  <h1>Dracula's Blog</h1>
   <ul>
-    <li><a href="#">bloood!</a></li>
-    <li><a href="#">transylvania</a></li>
+    {{#each}}
+      <li>{{#link-to 'post' this.id}}{{title}}{{/link-to}}</li>
+    {{/each}}
   </ul>
-</div>
+
+  <p><a href='#' {{action 'sortByTitle'}}>Sort by title</a></p>
+
+<!-- </div> -->
